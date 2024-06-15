@@ -13,7 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "QuadraticEquationSolver"
-include(":app")
+rootProject.name = "CounterApp"
 include(":app")
  
