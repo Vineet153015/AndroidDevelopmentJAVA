@@ -57,7 +57,7 @@ public class Reposittory {
 
     }
 
-    public LiveData<List<Contacts>> getAllContacts(Contacts contacts){
+    public LiveData<List<Contacts>> getAllContacts(){
         return ContactDAO.getAllContacts();
     }
 }
