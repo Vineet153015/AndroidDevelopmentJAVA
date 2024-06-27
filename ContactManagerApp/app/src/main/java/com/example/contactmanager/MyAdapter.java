@@ -19,6 +19,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ContactViewHolder>
 
     private ArrayList<Contacts> contacts;
 
+    public MyAdapter(ArrayList<Contacts> contacts) {
+        this.contacts = contacts;
+    }
+
 
     @NonNull
     @Override
@@ -57,7 +61,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ContactViewHolder>
     }
 
     public void setContacts(ArrayList<Contacts> contacts){
-//  Inform the associated ReccycleView that the underlying dataset has changed, and the recyclView shuld refresh its views to reflects these changes.
+        this.contacts = contacts;
+//  Inform the associated ReccycleView that the underlying dataset has changed, and the recycleView should refresh its views to reflects these changes.
         notifyDataSetChanged();
     }
 

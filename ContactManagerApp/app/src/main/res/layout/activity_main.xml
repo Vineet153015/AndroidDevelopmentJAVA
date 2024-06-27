@@ -14,6 +14,7 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/mainbg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
@@ -28,6 +29,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:src="@drawable/baseline_add_24"
             android:id="@+id/floatingActionButton"
             android:onClick="@{clickhandler::onFABclicked}"
             android:layout_width="wrap_content"
